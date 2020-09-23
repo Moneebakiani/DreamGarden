@@ -42,18 +42,7 @@ a {
 .nav-margin-top {
     margin-top: 15px;
 }
-.banner {
-	background-attachment: fixed;
-	background-color: #fff;
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: white;
-	cursor: default;
-	text-align: center;
-	width: 100%;
-	float: left;
-}
+
 .banner-bg {
 
     margin: 90px;
@@ -106,7 +95,7 @@ a {
 	color: #000;
 }
 .slider-area {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .mynav {
 	transition: all 0.8s ease-in;
@@ -137,7 +126,11 @@ text-align: center;
 @media (max-width: 991px) {
     .navbar-header {
         float: none;
-    }
+	}
+	.navbar-header img {
+		width: 75px;
+		height: 50px;
+	}
     .navbar-toggle {
         display: block;
     }
@@ -242,7 +235,6 @@ text-align: center;
 
 .product{
 	margin-bottom: 30px;
-
 }
 .portfolio {
 	padding: 50px 0;
@@ -456,15 +448,9 @@ i.fa.fa-heart {
 }
 
 section {
-    padding: 60px 0;
+    padding: 20px 0;
 }
 
-section .section-title {
-    text-align: center;
-    color: #FFB229;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-}
 
 #team .card {
     border: none;
@@ -605,49 +591,39 @@ font-weight: 700;
   }
 /*-----Call to action Starts-------*/
 
-/*-----About Starts-------*/
-.about {
-	padding: 50px 0px;
-	width: 100%;
-	float: left;
-}
-.about h2 {
-	margin-top: 0px;
-	margin-bottom: 30px;
-	display: inline-block;
-	line-height: 35px;
-	color: #FFB229;
-	font-weight: 700;
-}
-.about-text p {
-	font-size: 15px;
-	font-weight: 300;
-	color: black;
-}
-.counter-item h5 {
-	margin: 0px !important;
-	font-family: 'Work Sans', sans-serif;
-}
-.timer {
-	color: #EB233C;
-	font-size: 50px;
-	font-weight: 200;
-}
+/*-----Insta section Starts-------*/
+
 .block {
 	padding-left: 0px !important;
 }
-/*-----About Ends-------*/
+.insta-imgs
+{
+margin: 30px 30px;
+}
+.insta h2{
+	color: #FFB229;
+	font-weight: 700;
+}
+.insta-div{
+   height:265px;
+}
+.insta-div img{
+	width:100%;
+	height:100%;
+}
+/*-----Insta section Ends-------*/
 
 
 /*-----Contact Starts-------*/
-.contact {
+footer {
 	background-color: rgba(0, 0, 0);
 	padding: 50px 0px;
 	float: left;
 	width: 100%;
 }
-.contact h3 {
+footer h3 {
 	color: #FFB229;
+	font-weight: 700;
 	margin-top: 0px;
 	margin-bottom: 50px;
 	display: inline-block;
@@ -701,6 +677,8 @@ hr {
     margin-left: 150px;
     margin-right: 150px;
 }
+/*-----Contact Ends-----*/
+
 
 /*-----Shop Starts-------*/
 
@@ -761,6 +739,20 @@ margin-bottom: 30px;
 	margin-top:30px;
 	margin-bottom: 30px;
 	
+}
+.product-item .pi-pic:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.product-item .pi-pic:hover:after {
+	cursor: pointer;
+    opacity:1;
 }
 .product-item .pi-pic {
 	overflow: hidden;
@@ -1188,8 +1180,12 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 
-/*------------------------------*/
-/*--------Product Detail------*/
+
+/*-----Product Detail Starts----*/
+
+#PoductDetail{
+	margin-top: 70px;
+}
 
 .product-detail h3,h4{
 	font-weight: 700;
@@ -1298,10 +1294,7 @@ display:flex;
 	.product-right i:hover{
 		color:#FFB229;
 	}
-	.feature-products{
-	  margin-top: 50px;
-	  margin-bottom: 50px;
-	}
+	
 	.product-header h2{
 	  color: #FFB229;
 	  font-weight: 700;
@@ -1341,9 +1334,7 @@ display:flex;
 		
 		background: none;
 		
-	}
-
-	
+	}	
 	 
 /*--------End Product Detail------*/
 
