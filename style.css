@@ -54,7 +54,7 @@ a {
 .bg-overlay {
     text-align: left;
     position: absolute;
-    top: 135px;
+    top: 115px;
     float: left;
     width: 30%;
 
@@ -63,7 +63,8 @@ a {
     
     width: 400px;
     float: left;
-    text-align: left;
+	text-align: left;
+	margin-left: 70px;
 }
 .banner-text h1{
 	color: #FFB229;
@@ -222,8 +223,9 @@ text-align: center;
 	width:100%;
 	height:100%
 	
-	
   }
+ 
+
 .text-block:hover{
 	background: rgba(0, 0, 0, 0.80);
 }
@@ -240,8 +242,10 @@ text-align: center;
 	padding: 50px 0;
 	float: left;
 	width: 100%;
+	background-color: #F5F4F2;
 }
 .portfolio-item {
+	position: relative;
 	margin-bottom: 30px;
 }
 
@@ -264,6 +268,15 @@ text-align: center;
 	line-height: 35px;
 	font-weight: 700;
 }
+.text-tag {
+	position: absolute;
+	top: 20px;
+	background-color:#4bd8c8;
+	color: white;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+  }
 .checked
 {
 	color: #FFB229;
@@ -318,30 +331,26 @@ i.fa.fa-heart {
 }
 #myBtnContainer
 {
-	text-align: center;
+	background-color: #fff;
 }
 
 .btn-nav {
 	border: none;
 	outline: none;
 	font-size: 17px;
-    padding: 12px 18px;
+    padding: 12px 0px;
     background-color: #fff;
-    border-right: 1px solid #707070;
-    line-height: 1px;
     cursor: pointer;
   }
-  .btn-nav:nth-child(4) {
-	border-right: 1px solid #fff;
-  }
+  
   
   .btn-nav:hover {
 	color: #FFB229;
   }
   
   .btn-nav.active {
-	color:#FFB229;
-	  background-color: #fff;
+	color:#000;
+	background-color: #FFB229;
 	  
 	}
 .text-block {
@@ -448,7 +457,7 @@ i.fa.fa-heart {
 }
 
 section {
-    padding: 20px 0;
+    padding-top: 20px;
 }
 
 
@@ -560,6 +569,7 @@ font-weight: 700;
 	overflow: hidden;
   }
   .subscribe-text h2{
+	  color: black;
 	  font-weight: 800;
   }
   .suscribe-input input {
@@ -592,7 +602,97 @@ font-weight: 700;
 /*-----Call to action Starts-------*/
 
 /*-----Insta section Starts-------*/
+.hvrbox,.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 14px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox-text i{
+	margin-right: 10px;
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
 
+.about {
+	padding: 50px 0px;
+	width: 100%;
+	float: left;
+}
+.about h2 {
+	margin-top: 0px;
+	margin-bottom: 30px;
+	display: inline-block;
+	line-height: 35px;
+	color: #FFB229;
+	font-weight: 700;
+}
+.about-text p {
+	font-size: 15px;
+	font-weight: 300;
+	color: black;
+}
+.counter-item h5 {
+	margin: 0px !important;
+	font-family: 'Work Sans', sans-serif;
+}
+.timer {
+	color: #EB233C;
+	font-size: 50px;
+	font-weight: 200;
+}
 .block {
 	padding-left: 0px !important;
 }
@@ -605,12 +705,14 @@ margin: 30px 30px;
 	font-weight: 700;
 }
 .insta-div{
+	position: relative;
    height:265px;
 }
 .insta-div img{
 	width:100%;
 	height:100%;
 }
+
 /*-----Insta section Ends-------*/
 
 
